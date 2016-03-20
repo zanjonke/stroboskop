@@ -25,8 +25,8 @@ window.addEventListener('load', function() {
 	
 	//Stroboskop
 	var vrednosti = [];
-	var minCas = 0;
-	var maxCas = 0;
+	var minCas = parseInt(document.querySelector("#min").value, 10); 
+	var maxCas = parseInt(document.querySelector("#max").value, 10);
 	var ustavi = false;
 	
 	var spremeniBarvo = function(id) {
@@ -58,8 +58,8 @@ window.addEventListener('load', function() {
 			vrednosti.push(barva.innerHTML);
 		}
 		
-		minCas = 1000;
-		maxCas = 1000;
+		minCas = parseInt(document.querySelector("#min").value, 10); 
+		maxCas = parseInt(document.querySelector("#max").value, 10); 
 		spremeniBarvo(0);
 		
 		var start = document.querySelector("#start");
