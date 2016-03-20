@@ -14,6 +14,15 @@ window.addEventListener('load', function() {
 		
 	//Odstrani barve
 	
+	var odstraniBarvo = function(event){
+		var elem = document.getElementById('barve');
+		elem.parentNode.removeChild(barve);
+		
+	}
+	
+	document.querySelector("#odstraniBarve") 
+		.addEventListener('click', odstraniBarvo);
+	
 	//Stroboskop
 	var vrednosti = [];
 	var minCas = 0;
